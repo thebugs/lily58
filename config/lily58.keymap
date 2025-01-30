@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                      &kp N6    &kp N7  &kp N8     &kp N9   &kp N0         &kp GRAVE
-&kp TAB     &kp Q   &kp W   &kp F             &kp P         &kp B                                       &kp J     &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp EQUAL
-&kp LSHIFT  &kp A   &kp R   &kp S             &kp T         &kp G                                       &kp M     &kp N   &kp E      &kp I    &kp O          &kp SQT
-&kp LCTRL   &kp Z   &kp X   &kp C             &kp D         &kp V     &kp LEFT_BRACKET    &kp RBKT      &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp MINUS
-                            &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &lt 3 SPACE         &lt 2 RETURN  &kp BSPC  &trans  &none
+&kp ESC      &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                      &kp N6    &kp N7  &kp N8     &kp N9   &kp N0         &kp GRAVE
+&kp TAB      &kp Q   &kp W   &kp F             &kp P         &kp B                                       &kp J     &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp EQUAL
+&kp LSHIFT   &kp A   &kp R   &kp S             &kp T         &kp G                                       &kp M     &kp N   &kp E      &kp I    &kp O          &kp SQT
+&lt 2 GRAVE  &kp Z   &kp X   &kp C             &kp D         &kp V     &kp LEFT_BRACKET    &kp RBKT      &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHIFT
+                             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &kp SPACE           &lt 3 RETURN  &kp BSPC  &trans  &none
             >;
         };
 
