@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC      &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                      &kp N6    &kp N7  &kp N8     &kp N9   &kp N0         &kp GRAVE
+&kp ESC      &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                      &kp N6    &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
 &kp TAB      &kp Q   &kp W   &kp F             &kp P         &kp B                                       &kp J     &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp EQUAL
 &kp LSHIFT   &kp A   &kp R   &kp S             &kp T         &kp G                                       &kp M     &kp N   &kp E      &kp I    &kp O          &kp SQT
 &lt 2 GRAVE  &kp Z   &kp X   &kp C             &kp D         &kp V     &kp LEFT_BRACKET    &kp RBKT      &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHIFT
-                             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &kp SPACE           &lt 3 RETURN  &kp BSPC  &trans  &none
+                             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &kp SPACE           &lt 3 RETURN  &kp BSPC  &trans  &kp BSLH
             >;
         };
 
@@ -44,11 +44,11 @@
 
         Fn {
             bindings = <
-&trans  &trans  &kp F10  &kp F11  &kp F12  &trans                    &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F7   &kp F8   &kp F9   &trans                    &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4   &kp F5   &kp F6   &trans                    &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans  &trans    &trans  &trans          &trans  &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7   &kp F8   &kp F9   &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4   &kp F5   &kp F6   &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans    &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans   &trans  &trans    &trans          &trans  &trans  &trans
             >;
 
             label = "Fn";
@@ -61,6 +61,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &trans          &trans          &trans           &trans  &trans
                         &trans  &trans  &trans  &trans                  &trans                 &trans  &trans          &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
