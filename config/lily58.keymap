@@ -52,11 +52,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC      &kp N1             &kp N2               &kp N3            &kp N4           &kp N5                                      &kp N6     &kp N7          &kp N8            &kp N9                &kp N0            &kp MINUS
-&kp TAB      &kp Q              &kp W                &kp E             &kp R            &kp T                                       &kp Y      &kp U           &kp I             &kp O                 &kp P             &kp EQUAL
-&kp LSHIFT   &hrl LEFT_SHIFT A  &hrl LEFT_CONTROL S  &hrl LEFT_ALT D   &hrl LEFT_GUI F  &kp G                                       &kp H      &hrr RGUI J     &hrr RIGHT_ALT K  &hrr RIGHT_CONTROL L  &hrr RSHIFT SEMI  &kp SQT
-&lt 2 GRAVE  &kp Z              &kp X                &kp C             &kp V            &kp B     &kp LEFT_BRACKET    &kp RBKT      &kp N      &kp M           &kp COMMA         &kp DOT               &kp FSLH          &kp RSHIFT
-                                                     &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI  &kp BACKSPACE       &lt 3 RETURN  &kp SPACE  &kp UNDERSCORE  &kp BSLH
+&kp ESC      &kp N1             &kp N2               &kp N3            &kp N4           &kp N5                                      &kp N6         &kp N7          &kp N8            &kp N9                &kp N0            &kp MINUS
+&kp TAB      &kp Q              &kp W                &kp E             &kp R            &kp T                                       &kp Y          &kp U           &kp I             &kp O                 &kp P             &kp EQUAL
+&kp LSHIFT   &hrl LEFT_SHIFT A  &hrl LEFT_CONTROL S  &hrl LEFT_ALT D   &hrl LEFT_GUI F  &kp G                                       &kp H          &hrr RGUI J     &hrr RIGHT_ALT K  &hrr RIGHT_CONTROL L  &hrr RSHIFT SEMI  &kp SQT
+&lt 2 GRAVE  &kp Z              &kp X                &kp C             &kp V            &kp B     &kp LEFT_BRACKET    &kp RBKT      &kp N          &kp M           &kp COMMA         &kp DOT               &kp FSLH          &kp ENTER
+                                                     &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI  &kp SPACE           &lt 3 RETURN  &kp BACKSPACE  &kp UNDERSCORE  &kp BSLH
             >;
         };
 
@@ -74,11 +74,11 @@
 
         Fn {
             bindings = <
-&trans  &trans  &kp F10  &kp F11  &kp F12  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F7   &kp F8   &kp F9   &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4   &kp F5   &kp F6   &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans    &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans  &trans    &trans          &trans  &trans  &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans                            &trans      &trans             &trans           &trans      &trans  &trans
+&trans  &trans  &kp F7   &kp F8   &kp F9   &trans                            &trans      &kp C_PP           &trans           &trans      &trans  &trans
+&trans  &trans  &kp F4   &kp F5   &kp F6   &trans                            &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &trans  &trans
+&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &bt BT_CLR_ALL    &trans  &trans      &kp K_MUTE         &trans           &trans      &trans  &trans
+                         &trans   &trans   &trans  &trans            &trans  &trans      &trans             &trans
             >;
 
             label = "Fn";
@@ -87,19 +87,19 @@
         NAV {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                                 &trans    &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                 &trans    &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                 &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                 &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans    &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans    &trans          &trans        &trans           &trans  &tog 4
                         &trans  &trans  &trans  &trans                  &trans                 &trans    &trans          &trans
             >;
         };
 
-        layer_4 {
+        Print {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &trans                    &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans    &kp RSHFT
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
