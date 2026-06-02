@@ -86,11 +86,11 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                 &trans    &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                 &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                 &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans    &trans          &trans        &trans           &trans  &tog 4
-                        &trans  &trans  &trans  &trans                  &trans                 &trans    &trans          &trans
+&kp  &kp            &kp        &kp             &kp               &kp                                                          &kp       &kp             &kp           &kp              &kp  &kp
+&kp  &kp            &kp        &kp             &kp               &kp                                                          &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &kp  &kp
+&kp  &kp AT_SIGN    &kp EQUAL  &kp UNDERSCORE  &kp DOLLAR        &kp ASTERISK                                                 &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp  &kp
+&kp  &kp LESS_THAN  &kp PIPE   &kp MINUS       &kp GREATER_THAN  &kp PLUS      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp       &kp             &kp           &kp              &kp  &tog 4
+                               &kp             &kp               &kp           &kp                     &kp                    &kp       &kp             &kp
             >;
         };
 
